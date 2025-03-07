@@ -13,8 +13,8 @@ namespace OpenTelemetry.AutoInstrumentation.Instrumentations.Axal;
 /// BusinessLogic instrumentation for ProcessBusinessOperation method
 /// </summary>
 [InstrumentMethod(
-    assemblyName: "?vizdom",
-    typeName: "?vizdom",
+    assemblyName: "?Examples",
+    typeName: "?Examples",
     methodName: "?",
     returnTypeName: ClrNames.Void,
     parameterTypeNames: new string[] { },

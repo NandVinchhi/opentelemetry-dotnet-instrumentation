@@ -5,21 +5,17 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Examples.AspNetCoreMvc.Logic;
-using Examples.AspNetCoreMvc.Messages;
 using Microsoft.AspNetCore.Mvc;
-using NServiceBus;
 
 namespace Examples.AspNetCoreMvc.Controllers;
 
 [Route("api")]
 public class ApiController : ControllerBase
 {
-    private readonly IMessageSession _messageSession;
     private readonly BusinessLogic _businessLogic;
 
-    public ApiController(IMessageSession messageSession, BusinessLogic businessLogic)
+    public ApiController(BusinessLogic businessLogic)
     {
-        _messageSession = messageSession;
         _businessLogic = businessLogic;
     }
 
@@ -37,15 +33,6 @@ public class ApiController : ControllerBase
     {
         await Task.Delay(TimeSpan.FromSeconds(seconds));
         return Ok(seconds);
-    }
-
-    [HttpGet]
-    [Route("send-message")]
-    public async Task<ActionResult> SendMessage()
-    {
-        var command = new TestMessage();
-        await _messageSession.Send(command);
-        return Ok("Message sent successfully");
     }
 
     [HttpGet]

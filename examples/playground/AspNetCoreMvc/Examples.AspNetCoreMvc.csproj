@@ -4,10 +4,5 @@
     <TargetFrameworks>net9.0;net8.0</TargetFrameworks>
     <RootNamespace>Examples.AspNetCoreMvc</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="NServiceBus" />
-    <PackageReference Include="NServiceBus.Extensions.Hosting" />
-  </ItemGroup>
-
+  
 </Project>
