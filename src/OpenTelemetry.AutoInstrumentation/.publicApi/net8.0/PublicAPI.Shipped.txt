@@ -57,3 +57,4 @@ static OpenTelemetry.AutoInstrumentation.CallTarget.CallTargetInvoker.LogExcepti
 static OpenTelemetry.AutoInstrumentation.CallTarget.CallTargetReturn.GetDefault() -> OpenTelemetry.AutoInstrumentation.CallTarget.CallTargetReturn
 static OpenTelemetry.AutoInstrumentation.CallTarget.CallTargetReturn<T>.GetDefault() -> OpenTelemetry.AutoInstrumentation.CallTarget.CallTargetReturn<T>
 static OpenTelemetry.AutoInstrumentation.CallTarget.CallTargetState.GetDefault() -> OpenTelemetry.AutoInstrumentation.CallTarget.CallTargetState
+OpenTelemetry.AutoInstrumentation.Instrumentations.Axal.AxalIntegration
