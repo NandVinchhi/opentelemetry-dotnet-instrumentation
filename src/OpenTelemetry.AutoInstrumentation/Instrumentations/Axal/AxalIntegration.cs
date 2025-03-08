@@ -10,7 +10,7 @@ using OpenTelemetry.AutoInstrumentation.Util;
 namespace OpenTelemetry.AutoInstrumentation.Instrumentations.Axal;
 
 /// <summary>
-/// BusinessLogic instrumentation for ProcessBusinessOperation method
+/// Axal custom instrumentation for all methods in the source code
 /// </summary>
 [InstrumentMethod(
     assemblyName: "?Examples",
