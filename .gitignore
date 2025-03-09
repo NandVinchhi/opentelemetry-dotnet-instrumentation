@@ -320,3 +320,4 @@ test/test-applications/integrations/dependency-libs/TestApplication.ContinuousPr
 /otel-dotnet-auto/
 
 lychee/out.md
+/build
