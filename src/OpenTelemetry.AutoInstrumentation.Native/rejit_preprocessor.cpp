@@ -326,11 +326,11 @@ ULONG RejitPreprocessor<RejitRequestDefinition>::RequestRejitForLoadedModules(
             {
                 // If the integration is not for the current assembly we skip.
                 if (target_method.type.assembly.name.size() > 0 && target_method.type.assembly.name[0] == L'?'){
-                    std::string assemblyPrefix = ToString(target_method.type.assembly.name.substr(1));
-                    std::string currentAssembly = ToString(moduleInfo.assembly.name);
+                    std::wstring assemblyPrefix = target_method.type.assembly.name.substr(1);
+                    std::wstring currentAssembly = moduleInfo.assembly.name;
                     if (currentAssembly.rfind(assemblyPrefix, 0) != 0) {
                         continue;
-                    } 
+                    }
                 } else if (target_method.type.assembly.name != moduleInfo.assembly.name) {
                     continue;
                 }
@@ -372,7 +372,7 @@ ULONG RejitPreprocessor<RejitRequestDefinition>::RequestRejitForLoadedModules(
                     // Process all types in the module when wildcard is specified
                     Logger::Debug("  Processing all types in module: ", moduleInfo.assembly.name);                    
                     // Extract the prefix from the wildcard pattern (everything after the '?')
-                    std::string typePrefix = ToString(target_method.type.name.substr(1));
+                    std::wstring typePrefix = target_method.type.name.substr(1);
                     
                     // Enumerate all type definitions in the module
                     auto enumTypeDefs = EnumTypeDefs(metadataImport);
@@ -396,7 +396,7 @@ ULONG RejitPreprocessor<RejitRequestDefinition>::RequestRejitForLoadedModules(
                         mdToken tkExtends;
                         HRESULT hr = metadataImport->GetTypeDefProps(typeDef, szTypeDef, 256, &cchTypeDef, &typeDefFlags, &tkExtends);
                         if (SUCCEEDED(hr)) {
-                            std::string typeName(szTypeDef, szTypeDef + cchTypeDef - 1);
+                            std::wstring typeName(szTypeDef, szTypeDef + cchTypeDef - 1);
 
                             if (typeName.rfind(typePrefix, 0) == 0) {
                                 ProcessTypeDefForRejit(definition, metadataImport, metadataEmit, assemblyImport, assemblyEmit,

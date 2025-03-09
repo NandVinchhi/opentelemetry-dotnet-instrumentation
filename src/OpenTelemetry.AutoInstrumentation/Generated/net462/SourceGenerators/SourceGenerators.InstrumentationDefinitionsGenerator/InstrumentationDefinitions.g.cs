@@ -17,7 +17,7 @@ internal static partial class InstrumentationDefinitions
 {
     private static NativeCallTargetDefinition[] GetDefinitionsArray()
     {
-        var nativeCallTargetDefinitions = new List<NativeCallTargetDefinition>(35);
+        var nativeCallTargetDefinitions = new List<NativeCallTargetDefinition>(36);
         // Traces
         var tracerSettings = Instrumentation.TracerSettings.Value;
         if (tracerSettings.TracesEnabled)
@@ -26,6 +26,12 @@ internal static partial class InstrumentationDefinitions
             if (tracerSettings.EnabledInstrumentations.Contains(TracerInstrumentation.AspNet))
             {
                 nativeCallTargetDefinitions.Add(new("System.Web", "System.Web.Compilation.BuildManager", "InvokePreStartInitMethodsCore", ["System.Void", "System.Collections.Generic.ICollection`1[System.Reflection.MethodInfo]", "System.Func`1[System.IDisposable]"], 4, 0, 0, 4, 65535, 65535, AssemblyFullName, "OpenTelemetry.AutoInstrumentation.Instrumentations.AspNet.HttpModuleIntegration"));
+            }
+
+            // Axal
+            if (tracerSettings.EnabledInstrumentations.Contains(TracerInstrumentation.Axal))
+            {
+                nativeCallTargetDefinitions.Add(new("?Examples", "?Examples", "?", ["System.Void"], 1, 0, 0, 65535, 65535, 65535, AssemblyFullName, "OpenTelemetry.AutoInstrumentation.Instrumentations.Axal.AxalIntegration"));
             }
 
             // Kafka
@@ -65,12 +71,6 @@ internal static partial class InstrumentationDefinitions
             if (tracerSettings.EnabledInstrumentations.Contains(TracerInstrumentation.NServiceBus))
             {
                 nativeCallTargetDefinitions.Add(new("NServiceBus.Core", "NServiceBus.EndpointConfiguration", ".ctor", ["System.Void", "System.String"], 8, 0, 0, 8, 65535, 65535, AssemblyFullName, "OpenTelemetry.AutoInstrumentation.Instrumentations.NServiceBus.EndpointConfigurationIntegration"));
-            }
-
-            // Axal
-            if (tracerSettings.EnabledInstrumentations.Contains(TracerInstrumentation.Axal))
-            {
-                nativeCallTargetDefinitions.Add(new("?Examples", "?Examples.AspNetCoreMvc.Logic", "?", ["System.String", "System.String"], 1, 0, 0, 65535, 65535, 65535, AssemblyFullName, "OpenTelemetry.AutoInstrumentation.Instrumentations.Axal.AxalIntegration"));
             }
 
             // RabbitMq
