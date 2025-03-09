@@ -334,10 +334,13 @@ ULONG RejitPreprocessor<RejitRequestDefinition>::RequestRejitForLoadedModules(
                     std::wstring assemblyPrefix(target_method.type.assembly.name.begin() + 1,
                                                 target_method.type.assembly.name.end());
                     std::wstring currentAssembly(moduleInfo.assembly.name.begin(), moduleInfo.assembly.name.end());
+                    std::wcout << "CURRENT ASSEMBLY " << currentAssembly << std::endl;
                     if (currentAssembly.rfind(assemblyPrefix, 0) != 0)
                     {
+                        std::wcout << "NOT A MATCH" << std::endl;
                         continue;
                     }
+                    std::wcout << "MATCHED ASSEMBLY WITH " << assemblyPrefix << " - " << currentAssembly << std::endl;
                 }
                 else if (target_method.type.assembly.name != moduleInfo.assembly.name)
                 {
