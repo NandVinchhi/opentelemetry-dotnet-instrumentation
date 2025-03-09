@@ -3,7 +3,7 @@
 
 namespace OpenTelemetry.AutoInstrumentation.Instrumentations;
 
-// https://github.com/open-telemetry/semantic-conventions/blob/v1.23.0/docs/messaging/messaging-spans.md#messaging-attributes
+// https://github.com/axal-2024/semantic-conventions/blob/v1.23.0/docs/messaging/messaging-spans.md#messaging-attributes
 internal static class MessagingAttributes
 {
     internal static class Keys
@@ -16,7 +16,7 @@ internal static class MessagingAttributes
         public const string MessageId = "messaging.message.id";
         public const string ConversationId = "messaging.message.conversation_id";
 
-        // https://github.com/open-telemetry/semantic-conventions/blob/v1.23.0/docs/messaging/kafka.md#span-attributes
+        // https://github.com/axal-2024/semantic-conventions/blob/v1.23.0/docs/messaging/kafka.md#span-attributes
         internal static class Kafka
         {
             public const string ConsumerGroupId = "messaging.kafka.consumer.group";

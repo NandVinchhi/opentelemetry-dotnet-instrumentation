@@ -11,7 +11,7 @@ namespace IntegrationTests;
 [Collection(RabbitMqCollection.Name)]
 public class RabbitMqTests : TestHelper
 {
-    // https://github.com/open-telemetry/semantic-conventions/blob/d515887174e20a3546e89df5cb5a306231e1424b/docs/messaging/rabbitmq.md
+    // https://github.com/axal-2024/semantic-conventions/blob/d515887174e20a3546e89df5cb5a306231e1424b/docs/messaging/rabbitmq.md
 
     // Required messaging attributes set by the instrumentation
     private const string MessagingSystemAttributeName = "messaging.system";

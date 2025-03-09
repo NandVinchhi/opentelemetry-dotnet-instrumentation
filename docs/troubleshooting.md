@@ -103,7 +103,7 @@ Unhandled exception. System.Reflection.TargetInvocationException: Exception has 
 
 #### Related issues
 
-- [#1744](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/1744)
+- [#1744](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/1744)
 
 #### Solution
 
@@ -134,8 +134,8 @@ File name: 'Microsoft.Extensions.DependencyInjection.Abstractions, Version=7.0.0
 
 #### Related issues
 
-- [#2269](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/2269)
-- [#2296](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/2296)
+- [#2269](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/2269)
+- [#2296](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/2296)
 
 #### Solution
 
@@ -152,14 +152,14 @@ to use the same versions as OpenTelemetry .NET Automatic Instrumentation.
 
 The following dependencies are used by OpenTelemetry .NET Automatic Instrumentation:
 
-- [OpenTelemetry.AutoInstrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/src/OpenTelemetry.AutoInstrumentation/OpenTelemetry.AutoInstrumentation.csproj)
-- [OpenTelemetry.AutoInstrumentation.AdditionalDeps](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/src/OpenTelemetry.AutoInstrumentation.AdditionalDeps/Directory.Build.props)
+- [OpenTelemetry.AutoInstrumentation](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/main/src/OpenTelemetry.AutoInstrumentation/OpenTelemetry.AutoInstrumentation.csproj)
+- [OpenTelemetry.AutoInstrumentation.AdditionalDeps](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/main/src/OpenTelemetry.AutoInstrumentation.AdditionalDeps/Directory.Build.props)
 
 Find their versions in the following locations:
 
-- [Directory.Packages.props](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/Directory.Packages.props)
-- [src/Directory.Packages.props](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/src/Directory.Packages.props)
-- [src/OpenTelemetry.AutoInstrumentation.AdditionalDeps/Directory.Packages.props](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/src/OpenTelemetry.AutoInstrumentation.AdditionalDeps/Directory.Packages.props)
+- [Directory.Packages.props](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/main/Directory.Packages.props)
+- [src/Directory.Packages.props](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/main/src/Directory.Packages.props)
+- [src/OpenTelemetry.AutoInstrumentation.AdditionalDeps/Directory.Packages.props](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/main/src/OpenTelemetry.AutoInstrumentation.AdditionalDeps/Directory.Packages.props)
 
 By default, assembly references for .NET Framework applications are redirected
 during runtime to the versions used by the automatic instrumentation.
@@ -168,7 +168,7 @@ setting.
 
 If the application already ships binding redirection for assemblies
 used by automatic instrumentation this automatic redirection may fail,
-see [#2833](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/2833).
+see [#2833](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/2833).
 Check if any existing binding redirect prevent redirection to the versions
 listed at [netfx_assembly_redirection.h](../src/OpenTelemetry.AutoInstrumentation.Native/netfx_assembly_redirection.h).
 
@@ -188,7 +188,7 @@ If you are having problems in one of the scenarios above run again the
 are updated.
 
 For more information about the GAC usage by the automatic instrumentation,
-see [here](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/1906#issuecomment-1376292814).
+see [here](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/1906#issuecomment-1376292814).
 
 ### Assembly in AdditionalDeps was not found
 
@@ -202,8 +202,8 @@ An assembly specified in the application dependencies manifest (OpenTelemetry.Au
 
 #### Related issues
 
-- [#1744](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/1744)
-- [#2181](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/2181)
+- [#1744](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/1744)
+- [#2181](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/2181)
 
 #### Solution
 

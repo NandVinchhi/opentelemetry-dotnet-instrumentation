@@ -224,7 +224,7 @@ Libraries
 - OpenTelemetry.Shims.OpenTracing,
 are under the following copyright:
 Copyright The OpenTelemetry Authors under Apache License Version 2.0
-(<https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/LICENSE>).
+(<https://github.com/axal-2024/opentelemetry-dotnet/blob/main/LICENSE>).
 
 Libraries
 
@@ -243,7 +243,7 @@ Libraries
 - OpenTelemetry.ResourceDetectors.ProcessRuntime.dll,
 are under the following copyright:
 Copyright The OpenTelemetry Authors under Apache License Version 2.0
-(<https://github.com/open-telemetry/opentelemetry-dotnet-contrib/blob/main/LICENSE>).
+(<https://github.com/axal-2024/opentelemetry-dotnet-contrib/blob/main/LICENSE>).
 
 Library OpenTracing is under the following copyright:
 Copyright The OpenTracing Authors under Apache License Version 2.0

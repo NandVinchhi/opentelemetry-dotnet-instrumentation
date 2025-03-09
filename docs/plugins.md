@@ -1,6 +1,6 @@
 # Plugins
 
-**Status**: [Experimental](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/versioning-and-stability.md).
+**Status**: [Experimental](https://github.com/axal-2024/opentelemetry-specification/blob/main/specification/versioning-and-stability.md).
 
 You can use `OTEL_DOTNET_AUTO_PLUGINS` environment variable to extend the
 configuration and overwrite options of the OpenTelemetry .NET SDK Tracer, Meter or

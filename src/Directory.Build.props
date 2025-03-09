@@ -18,11 +18,11 @@
     <PackageProjectUrl>https://opentelemetry.io</PackageProjectUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>See release notes at https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases</PackageReleaseNotes>
+    <PackageReleaseNotes>See release notes at https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases</PackageReleaseNotes>
     <PackageTags>APM;AutoInstrumentation;Automatic Instrumentation;Instrumentation;Logs;Metrics;Monitoring;O11y;Observability;OpenTelemetry;OTel;Telemetry;Tracing</PackageTags>
     <PackageReadmeFile>docs\README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/axal-2024/opentelemetry-dotnet-instrumentation.git</RepositoryUrl>
     <Copyright>Copyright The OpenTelemetry Authors</Copyright>
     <Company>OpenTelemetry</Company>
     <Authors>OpenTelemetry Authors</Authors>

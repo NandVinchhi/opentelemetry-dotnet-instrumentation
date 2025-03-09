@@ -47,7 +47,7 @@ internal static class SampleNativeFormatParser
 
                     sampleStartMillis = ReadInt64(buffer, ref position);
 
-                    // TODO Debug logs to measure overhead https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/3205
+                    // TODO Debug logs to measure overhead https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/3205
                     /* if (IsLogLevelDebugEnabled)
                     {
                         var sampleStart = new DateTime(
@@ -103,7 +103,7 @@ internal static class SampleNativeFormatParser
                     var totalFrames = ReadInt(buffer, ref position);
                     var numCacheMisses = ReadInt(buffer, ref position);
 
-                    // TODO Debug logs to measure overhead https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/3205
+                    // TODO Debug logs to measure overhead https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/3205
                     /*if (IsLogLevelDebugEnabled)
                     {
                         Log.Debug(
@@ -115,7 +115,7 @@ internal static class SampleNativeFormatParser
                 {
                     position = read + 1;
 
-                    // TODO Debug log to handle unexpected buffer https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/3205
+                    // TODO Debug log to handle unexpected buffer https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/3205
                     /* if (IsLogLevelDebugEnabled)
                     {
                         Log.Debug("Not expected operation code while parsing thread stack trace: '{0}'. Operation will be ignored.", operationCode);

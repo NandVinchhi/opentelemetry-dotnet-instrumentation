@@ -12,9 +12,9 @@ to .NET applications without having to modify their source code.
 > [!WARNING]
 > The following documentation refers to the in-development version
 of OpenTelemetry .NET Automatic Instrumentation. Docs for the latest version
-([1.11.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/latest))
+([1.11.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/latest))
 can be found in [opentelemetry.io](https://opentelemetry.io/docs/zero-code/net/)
-or [here](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/v1.11.0/docs/README.md).
+or [here](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/v1.11.0/docs/README.md).
 
 ---
 
@@ -47,10 +47,10 @@ follow the [examples/demo/README.md](../examples/demo/README.md).
 ## Components
 
 OpenTelemetry .NET Automatic Instrumentation is built on top of
-[OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet):
+[OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet):
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-[`1.11.2`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.11.2)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+[`1.11.2`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.11.2)
 - `System.Diagnostics.DiagnosticSource`: [`9.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/9.0.0)
   referencing `System.Runtime.CompilerServices.Unsafe`: [`6.0.0`](https://www.nuget.org/packages/System.Runtime.CompilerServices.Unsafe/6.0.0)
 
@@ -61,7 +61,7 @@ and [OpenTelemetry.AutoInstrumentation.AdditionalDeps/Directory.Build.props](../
 To automatically instrument applications, the OpenTelemetry .NET Automatic
 Instrumentation does the following:
 
-1. Injects and configures the [OpenTelemetry .NET SDK](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry/README.md#opentelemetry-net-sdk)
+1. Injects and configures the [OpenTelemetry .NET SDK](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/src/OpenTelemetry/README.md#opentelemetry-net-sdk)
    into the application.
 1. Adds [OpenTelemetry Instrumentation](https://opentelemetry.io/docs/concepts/instrumenting/)
    to key packages and APIs used by the application.
@@ -93,15 +93,15 @@ Supported processor architectures are:
 
 - x86
 - AMD64 (x86-64)
-- ARM64 ([Experimental](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/versioning-and-stability.md))
+- ARM64 ([Experimental](https://github.com/axal-2024/opentelemetry-specification/blob/main/specification/versioning-and-stability.md))
 
 CI tests run against the following operating systems:
 
-- [Alpine x64](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docker/alpine.dockerfile)
-- [Alpine ARM64](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docker/alpine.dockerfile)
-- [Debian x64](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docker/debian.dockerfile)
-- [Debian ARM64](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docker/debian-arm64.dockerfile)
-- [CentOS Stream 9 x64](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/main/docker/centos-stream9.dockerfile)
+- [Alpine x64](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/main/docker/alpine.dockerfile)
+- [Alpine ARM64](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/main/docker/alpine.dockerfile)
+- [Debian x64](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/main/docker/debian.dockerfile)
+- [Debian ARM64](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/main/docker/debian-arm64.dockerfile)
+- [CentOS Stream 9 x64](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/main/docker/centos-stream9.dockerfile)
 - [macOS Ventura 13 x64](https://github.com/actions/runner-images/blob/main/images/macos/macos-13-Readme.md)
 - [Microsoft Windows Server 2022 x64](https://github.com/actions/runner-images/blob/main/images/windows/Windows2022-Readme.md)
 - [Ubuntu 22.04 LTS x64](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md)
@@ -132,7 +132,7 @@ See [Limitations](./using-the-nuget-packages.md#limitations) for incompatible sc
 ### Install manually
 
 To install the automatic instrumentation manually, download and extract the appropriate binaries from
-[the latest release](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/latest).
+[the latest release](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/latest).
 
 > [!NOTE]
 > The path where you put the binaries is referenced as `$INSTALL_DIR`.
@@ -180,7 +180,7 @@ Example usage:
 
 ```sh
 # Download the bash script
-curl -sSfL https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/download/v1.11.0/otel-dotnet-auto-install.sh -O
+curl -sSfL https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/download/v1.11.0/otel-dotnet-auto-install.sh -O
 
 # Install core files
 sh ./otel-dotnet-auto-install.sh
@@ -240,7 +240,7 @@ Example usage (run as administrator):
 
 ```powershell
 # Download the module
-$module_url = "https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/download/v1.11.0/OpenTelemetry.DotNet.Auto.psm1"
+$module_url = "https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/download/v1.11.0/OpenTelemetry.DotNet.Auto.psm1"
 $download_path = Join-Path $env:temp "OpenTelemetry.DotNet.Auto.psm1"
 Invoke-WebRequest -Uri $module_url -OutFile $download_path -UseBasicParsing
 
@@ -294,7 +294,7 @@ You can find our demonstrative example
 that uses Docker Compose [here](../examples/demo).
 
 You can also consider using
-the [Kubernetes Operator for OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-operator).
+the [Kubernetes Operator for OpenTelemetry Collector](https://github.com/axal-2024/opentelemetry-operator).
 
 ## Instrument a Windows Service running a .NET application
 
@@ -330,7 +330,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Community Roles
 
-[Maintainers](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#membership-levels)
+[Maintainers](https://github.com/axal-2024/community/blob/main/guides/contributor/membership.md#membership-levels)
 ([@open-telemetry/dotnet-instrumentation-maintainers](https://github.com/orgs/open-telemetry/teams/dotnet-instrumentation-maintainers)):
 
 - [Chris Ventura](https://github.com/nrcventura), New Relic
@@ -340,14 +340,14 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 - [Robert Paj&#x105;k](https://github.com/pellared), Splunk
 - [Zach Montoya](https://github.com/zacharycmontoya), Datadog
 
-[Approvers](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#membership-levels)
+[Approvers](https://github.com/axal-2024/community/blob/main/guides/contributor/membership.md#membership-levels)
 ([@open-telemetry/dotnet-instrumentation-approvers](https://github.com/orgs/open-telemetry/teams/dotnet-instrumentation-approvers)):
 
 - [Mateusz &#x141;ach](https://github.com/lachmatt), Splunk
 - [Rasmus Kuusmann](https://github.com/RassK), Splunk
 
 [Emeritus
-Maintainer/Approver/Triager](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#membership-levels):
+Maintainer/Approver/Triager](https://github.com/axal-2024/community/blob/main/guides/contributor/membership.md#membership-levels):
 
 - [Colin Higgins](https://github.com/colin-higgins)
 - [Greg Paperin](https://github.com/macrogreg)
@@ -356,4 +356,4 @@ Maintainer/Approver/Triager](https://github.com/open-telemetry/community/blob/ma
 - [Mike Goldsmith](https://github.com/MikeGoldsmith)
 - [Tony Redondo](https://github.com/tonyredondo)
 
-Learn more about roles in the [community repository](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md).
+Learn more about roles in the [community repository](https://github.com/axal-2024/community/blob/main/guides/contributor/membership.md).

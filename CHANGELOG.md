@@ -5,7 +5,7 @@ All notable changes to this component are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 This component adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/compare/v1.11.0..HEAD)
+## [Unreleased](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/compare/v1.11.0..HEAD)
 
 ### Added
 
@@ -19,7 +19,7 @@ This component adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ### Fixed
 
-## [1.11.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.11.0)
+## [1.11.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.11.0)
 
 ### Changed
 
@@ -28,8 +28,8 @@ This component adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 #### Dependency updates
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.11.2`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.11.2).
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.11.2`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.11.2).
 - Following packages updated
   - `OpenTelemetry.Instrumentation.GrpcNetClient` from `1.11.0-beta.1` to `1.11.0-beta.2`
   - `OpenTelemetry.Instrumentation.Http` from `1.11.0` to `1.11.1`,
@@ -72,19 +72,19 @@ This component adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ### Fixed
 
-- Fixed [DoS Vulnerability in TraceContextPropagator.Extract](https://github.com/open-telemetry/opentelemetry-dotnet/security/advisories/GHSA-8785-wc3w-h8q6).
+- Fixed [DoS Vulnerability in TraceContextPropagator.Extract](https://github.com/axal-2024/opentelemetry-dotnet/security/advisories/GHSA-8785-wc3w-h8q6).
 
-## [1.10.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.10.0)
+## [1.10.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.10.0)
 
-This release include all changes from [1.10.0-beta.1](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.10.0-beta.1)
+This release include all changes from [1.10.0-beta.1](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.10.0-beta.1)
 release.
 
 ### Changed
 
 #### Dependency updates
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.11.1`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.11.1).
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.11.1`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.11.1).
 - Following packages updated
   - `OpenTelemetry.Instrumentation.GrpcNetClient` from `1.10.0-beta.1` to `1.11.0-beta.1`
   - `OpenTelemetry.Instrumentation.Http` from `1.10.0` to `1.11.0`,
@@ -139,7 +139,7 @@ release.
 
 ### Fixed
 
-## [1.10.0-beta.1](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.10.0-beta.1)
+## [1.10.0-beta.1](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.10.0-beta.1)
 
 ### Added
 
@@ -164,8 +164,8 @@ release.
 
 #### Dependency updates
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.10.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.10.0).
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.10.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.10.0).
 - Following packages updated
   - `Microsoft.Extensions.Configuration.Binder` from `8.0.2` to `9.0.0`,
   - `Microsoft.Extensions.Logging.Configuration` from `8.0.0` to `9.0.0`,
@@ -216,7 +216,7 @@ release.
   macOs libraries are built and tested against [macOS Ventura 13 x64](https://github.com/actions/runner-images/blob/main/images/macos/macos-13-Readme.md).
 - `MongoDB.Driver.Core.Extensions.DiagnosticSources` dependency is removed.
 
-## [1.9.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.9.0)
+## [1.9.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.9.0)
 
 ### Changed
 
@@ -251,7 +251,7 @@ release.
   `OTEL_METRICS_EXPORTER`
   `OTEL_LOGS_EXPORTER`.
 
-## [1.8.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.8.0)
+## [1.8.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.8.0)
 
 ### Added
 
@@ -326,12 +326,12 @@ release.
 
 ### Fixed
 
-- Initialize WCF instrumentation only when necessary ([#3650](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/pull/3650))
+- Initialize WCF instrumentation only when necessary ([#3650](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/pull/3650))
 
-## [1.7.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.7.0)
+## [1.7.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.7.0)
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.9.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.9.0)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.9.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.9.0)
 - `System.Diagnostics.DiagnosticSource`: [`8.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/8.0.0)
 
 ### Added
@@ -361,7 +361,7 @@ release.
 
 - Musl-based (Alpine) libraries are compiled on Alpine v3.19.
 - Do not use message creation context as a parent for consumer spans for `Confluent.Kafka`
-  client instrumentation. See the [issue](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/3434)
+  client instrumentation. See the [issue](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/3434)
   for details.
 - Do not create consumer spans related to `PartitionEOF` events
   for `Confluent.Kafka` client instrumentation.
@@ -379,8 +379,8 @@ release.
 
 #### Dependency updates
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.9.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.9.0).
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.9.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.9.0).
 - Following packages updated
   - `OpenTelemetry.Exporter.Prometheus.HttpListener` from `1.8.0-rc.1` to `1.9.0-beta.1`,
   - `OpenTelemetry.Instrumentation.GrpcNetClient` from `1.8.0-beta.1` to `1.9.0-beta.1`,
@@ -409,10 +409,10 @@ release.
   All further releases will be supporting macOS Monterey 12 x64
   and newer.
 
-## [1.6.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.6.0)
+## [1.6.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.6.0)
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.8.1`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.8.1)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.8.1`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.8.1)
 - `System.Diagnostics.DiagnosticSource`: [`8.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/8.0.0)
 
 ### Changed
@@ -452,14 +452,14 @@ release.
 ### Fixed
 
 - Stop creating `receive` consumer spans for consume attempts that returned no message.
-  For details, see [#3367](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/3367)
+  For details, see [#3367](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/3367)
 
-## [1.5.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.5.0)
+## [1.5.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.5.0)
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.8.1`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.8.1).
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.8.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.8.0)
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.8.1`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.8.1).
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.8.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.8.0)
 - `System.Diagnostics.DiagnosticSource`: [`8.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/8.0.0)
 
 ### Added
@@ -477,8 +477,8 @@ release.
 
 #### Dependency updates
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.8.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.8.0).
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.8.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.8.0).
 - Following packages updated
   - `MongoDB.Driver.Core.Extensions.DiagnosticSources` from `1.3.0` to `1.4.0`.
   - `OpenTelemetry.Exporter.Prometheus.HttpListener` from `1.7.0-rc.1` to `1.8.0-rc.1`,
@@ -513,10 +513,10 @@ release.
   runtime store libraries, impacting applications with mismatched dependency
   versions. This fix enhances stability by addressing the underlying
   compatibility concerns. For details see:
-  ([#3075](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/3075),
-  [#3168](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/3168))
+  ([#3075](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/3075),
+  [#3168](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/3168))
 
-## [1.4.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.4.0)
+## [1.4.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.4.0)
 
 ### Added
 
@@ -560,10 +560,10 @@ release.
 - Fix ASP.NET Core traces instrumentation for .NET7. It is now using native
   support by `Microsoft.AspNetCore` instead of `OpenTelemetry.Instrumentation.AspNetCore`.
 
-## [1.3.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.3.0)
+## [1.3.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.3.0)
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.7.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.7.0)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.7.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.7.0)
 - `System.Diagnostics.DiagnosticSource`: [`8.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/8.0.0)
 
 ### Added
@@ -586,8 +586,8 @@ release.
 
 #### Dependency updates
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.7.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.7.0).
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.7.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.7.0).
 - Following packages updated
   - `OpenTelemetry.Exporter.Prometheus.HttpListener` from `1.6.0-rc.1` to `1.7.0-rc.1`,
   - `OpenTelemetry.Instrumentation.Http` from `1.6.0` to `1.7.0`,
@@ -631,10 +631,10 @@ for `ILOGGER` for versions older than `8.0.0`.
 
 - Set `service.name` resource attribute before invoking the plugin.
 
-## [1.2.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.2.0)
+## [1.2.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.2.0)
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.6.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.6.0)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.6.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.6.0)
 - `System.Diagnostics.DiagnosticSource`: [`8.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/8.0.0)
 
 ### Added
@@ -687,7 +687,7 @@ for `ILOGGER` for versions older than `8.0.0`.
 - Removed support for `OpenTelemetry.Instrumentation.AspNetCore.AspNetCoreMetricsInstrumentationOptions`
   for plugins.
 
-## [1.1.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.1.0)
+## [1.1.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.1.0)
 
 ### Added
 
@@ -713,13 +713,13 @@ for `ILOGGER` for versions older than `8.0.0`.
   times for ASP.NET Core 6.0 apps when bytecode instrumentation was enabled
   and `WebApplicationBuilder` was used.
 
-## [1.0.2](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.0.2)
+## [1.0.2](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.0.2)
 
 ### Fixed
 
 - Fixed log emission issue for ASP.NET Core 6.0 apps and enhanced diagnostics.
 
-## [1.0.1](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.0.1)
+## [1.0.1](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.0.1)
 
 ### Changed
 
@@ -731,14 +731,14 @@ for `ILOGGER` for versions older than `8.0.0`.
 ### Fixed
 
 - Fixed Rule checking System.Diagnostics.DiagnosticSource version for net7.0
-  failing on correct configuration [#2950](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/2950).
+  failing on correct configuration [#2950](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/2950).
 
-## [1.0.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.0.0)
+## [1.0.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.0.0)
 
-This release is built on top of [OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet):
+This release is built on top of [OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet):
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.6.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.6.0)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.6.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.6.0)
 - `System.Diagnostics.DiagnosticSource`: [`7.0.2`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/7.0.2)
 
 ### Added
@@ -748,8 +748,8 @@ This release is built on top of [OpenTelemetry .NET](https://github.com/open-tel
 
 ### Changed
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.6.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.6.0).
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.6.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.6.0).
 - [MySql.Data](https://www.nuget.org/packages/MySql.Data/) instrumentation is now
   supported from version 8.1.0 working on .NET.
 - OpenTracing spans are registered under `opentracing-shim` name
@@ -770,7 +770,7 @@ This release is built on top of [OpenTelemetry .NET](https://github.com/open-tel
 - Fixed `ILogger` log instrumentation issue that caused logs to be exported
   multiple times.
 
-## [1.0.0-rc.2](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.0.0-rc.2)
+## [1.0.0-rc.2](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.0.0-rc.2)
 
 ### Added
 
@@ -794,14 +794,14 @@ This release is built on top of [OpenTelemetry .NET](https://github.com/open-tel
   is not enabled.
 - Fixed manual tracing when instrumented project is referencing
   `System.Diagnostics.DiagnosticSource` `7.0.2`
-  [#2780](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/2780).
+  [#2780](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/2780).
 
-## [1.0.0-rc.1](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v1.0.0-rc.1)
+## [1.0.0-rc.1](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v1.0.0-rc.1)
 
-This release is built on top of [OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet):
+This release is built on top of [OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet):
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.5.1`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.5.1)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.5.1`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.5.1)
 - `System.Diagnostics.DiagnosticSource`: [`7.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/7.0.0)
 
 ### Added
@@ -813,8 +813,8 @@ This release is built on top of [OpenTelemetry .NET](https://github.com/open-tel
 
 ### Changed
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.5.1`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.5.1).
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.5.1`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.5.1).
 - ASP.NET instrumentation no longer requires manual modification
   of config files to include `TelemetryHttpModule`.
 - Parameter for `ConfigureTracesOptions` extension point for StackExchangeRedis
@@ -835,9 +835,9 @@ This release is built on top of [OpenTelemetry .NET](https://github.com/open-tel
 
 ### Known issues
 
-- Lack of support for MySql.Data 8.0.33. See [#2542](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/2542).
+- Lack of support for MySql.Data 8.0.33. See [#2542](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/2542).
 
-## [0.7.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.7.0)
+## [0.7.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.7.0)
 
 ### Added
 
@@ -865,25 +865,25 @@ This release is built on top of [OpenTelemetry .NET](https://github.com/open-tel
 - Removed `OTEL_DOTNET_AUTO_INTEGRATIONS_FILE` as a required environment
   variable for bytecode instrumentation setup
 
-## [0.6.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.6.0)
+## [0.6.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.6.0)
 
-This release is built on top of [OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet):
+This release is built on top of [OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet):
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.4.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.4.0)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.4.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.4.0)
 - `System.Diagnostics.DiagnosticSource`: [`7.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/7.0.0)
 
 ### Changed
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.4.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.4.0).
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.4.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.4.0).
 
-## [0.6.0-beta.2](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.6.0-beta.2)
+## [0.6.0-beta.2](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.6.0-beta.2)
 
-This beta release is built on top of [OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet):
+This beta release is built on top of [OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet):
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.4.0-rc.4`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.4)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.4.0-rc.4`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.4)
 - `System.Diagnostics.DiagnosticSource`: [`7.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/7.0.0)
 
 ### Added
@@ -892,8 +892,8 @@ This beta release is built on top of [OpenTelemetry .NET](https://github.com/ope
 
 ### Changed
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.4.0-rc.4`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.4).
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.4.0-rc.4`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.4).
 - Replace `OTEL_DOTNET_AUTO_LEGACY_SOURCES` with `OTEL_DOTNET_AUTO_TRACES_ADDITIONAL_LEGACY_SOURCES`.
 - Updated the shared store to correctly support
   [framework roll-forward](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#framework-dependent-apps-roll-forward)
@@ -907,14 +907,14 @@ This beta release is built on top of [OpenTelemetry .NET](https://github.com/ope
 
 - Fix location of `OpenTelemetry.AutoInstrumentation.Native.so` for `linux-musl-x64`.
 - Fix issues when instrumenting `dotnet` CLI
-  [#1477](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/1744).
+  [#1477](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/1744).
 
-## [0.6.0-beta.1](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.6.0-beta.1)
+## [0.6.0-beta.1](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.6.0-beta.1)
 
-This beta release is built on top of [OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet):
+This beta release is built on top of [OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet):
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.4.0-rc.3`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.3)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.4.0-rc.3`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.3)
 - `System.Diagnostics.DiagnosticSource`: [`7.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/7.0.0)
 
 ### Added
@@ -927,8 +927,8 @@ This beta release is built on top of [OpenTelemetry .NET](https://github.com/ope
 
 ### Changed
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.4.0-rc.3`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.3)
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.4.0-rc.3`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.3)
 - Move `OpenTelemetry.AutoInstrumentation.Native.so` to `linux-x64` directory
   in `tracer-home` for Linux glibc, `OpenTelemetry.AutoInstrumentation.Native.so`
   to `linux-musl-x64` for Linux musl and
@@ -959,14 +959,14 @@ This beta release is built on top of [OpenTelemetry .NET](https://github.com/ope
 ### Fixed
 
 - Fix console error messages `Log: Exception creating FileSink`
- [#1885](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/1885)
+ [#1885](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/1885)
 
-## [0.5.1-beta.3](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.5.1-beta.3)
+## [0.5.1-beta.3](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.5.1-beta.3)
 
-This beta release is built on top of [OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet):
+This beta release is built on top of [OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet):
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.4.0-rc.1`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.1)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.4.0-rc.1`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.1)
 - `System.Diagnostics.DiagnosticSource`: [`7.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/7.0.0)
 
 ### Added
@@ -986,8 +986,8 @@ This beta release is built on top of [OpenTelemetry .NET](https://github.com/ope
 
 ### Changed
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.4.0-rc.1`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.1)
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.4.0-rc.1`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.4.0-rc.1)
 
 ### Removed
 
@@ -997,7 +997,7 @@ This beta release is built on top of [OpenTelemetry .NET](https://github.com/ope
 
 - Fix WCF instrumentation on .NET Framework.
 
-## [0.5.1-beta.2](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.5.1-beta.2)
+## [0.5.1-beta.2](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.5.1-beta.2)
 
 ### Added
 
@@ -1005,12 +1005,12 @@ This beta release is built on top of [OpenTelemetry .NET](https://github.com/ope
 - Add `Initializing` plugin extension point
   that is invoked before OpenTelemetry SDK configuration.
 
-## [0.5.1-beta.1](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.5.1-beta.1)
+## [0.5.1-beta.1](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.5.1-beta.1)
 
-This beta release is built on top of [OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet):
+This beta release is built on top of [OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet):
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.4.0-beta.3`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.4.0-beta.3)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.4.0-beta.3`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.4.0-beta.3)
 - `System.Diagnostics.DiagnosticSource`: [`7.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/7.0.0)
 
 ### Added
@@ -1026,13 +1026,13 @@ This beta release is built on top of [OpenTelemetry .NET](https://github.com/ope
 
 ### Changed
 
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.4.0-beta.3`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.4.0-beta.3)
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.4.0-beta.3`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.4.0-beta.3)
 - Updated plugins method signature to overwrite OpenTelemetry .NET SDK exporters'
   and instrumentations' options. `ConfigureOptions` changed to `ConfigureTracesOptions`,
   `ConfigureMetricsOptions` or `ConfigureLogsOptions`.
 
-## [0.5.0](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.5.0)
+## [0.5.0](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.5.0)
 
 The is the first production-ready (non-beta) release.
 It is not stable yet.
@@ -1069,7 +1069,7 @@ It is not stable yet.
   in the PowerShell script module.
 - `OTEL_DOTNET_AUTO_TRACES_ENABLED` is also respected by bytecode instrumentations.
 
-## [0.4.0-beta.1](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.4.0-beta.1)
+## [0.4.0-beta.1](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.4.0-beta.1)
 
 ### Added
 
@@ -1085,7 +1085,7 @@ It is not stable yet.
   environment variable which controls whether `graphql.document` attribute
   is set.
 - Add ILogger logging instrumentation for .NET Core 3.1+.  
-- Add [telemetry resource attributes](https://github.com/open-telemetry/opentelemetry-specification/tree/v1.13.0/specification/resource/semantic_conventions#telemetry-sdk).
+- Add [telemetry resource attributes](https://github.com/axal-2024/opentelemetry-specification/tree/v1.13.0/specification/resource/semantic_conventions#telemetry-sdk).
 - Add support for the `b3` propagator.
 - Add MassTransit traces instrumentation.
 - Add `OpenTelemetry.AutoInstrumentation` Nuget package.
@@ -1114,21 +1114,21 @@ It is not stable yet.
 ### Fixed
 
 - Log folder structure is fully created on Linux.
-- Update GraphQL instrumentation to follow the [OpenTelemetry semantic conventions](https://github.com/open-telemetry/opentelemetry-specification/blob/v1.13.0/specification/trace/semantic_conventions/instrumentation/graphql.md).
+- Update GraphQL instrumentation to follow the [OpenTelemetry semantic conventions](https://github.com/axal-2024/opentelemetry-specification/blob/v1.13.0/specification/trace/semantic_conventions/instrumentation/graphql.md).
 - Fixed the race between requesting ReJIT of methods targeted for bytecode
  instrumentation and their first execution. The race allowed, in rare occasions,
  for the first few executions of the method to not be instrumented. See
- issue [#1242](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/1242).
+ issue [#1242](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/1242).
 - Span kind for GraphQL instrumentation is set as span property instead of attribute.
 - Application crash if "wrapper type" from bytecode instrumentation is missing
- [#1469](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/1469).
+ [#1469](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/1469).
 
-## [0.3.1-beta.1](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.3.1-beta.1)
+## [0.3.1-beta.1](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.3.1-beta.1)
 
-This release is built on top of [OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet):
+This release is built on top of [OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet):
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.3.1`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.3.1)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.3.1`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.3.1)
 - `System.Diagnostics.DiagnosticSource`: [`6.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/6.0.0)
 
 ### Added
@@ -1140,10 +1140,10 @@ This release is built on top of [OpenTelemetry .NET](https://github.com/open-tel
 ### Changed
 
 - Extend StackExchange.Redis traces instrumentation for versions 2.6.66+.
-- Updated [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.3.1`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.3.1)
+- Updated [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.3.1`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.3.1)
 
-## [0.3.0-beta.1](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.3.0-beta.1)
+## [0.3.0-beta.1](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.3.0-beta.1)
 
 This release add various new instrumentations and more propagation options.
 
@@ -1169,7 +1169,7 @@ This release add various new instrumentations and more propagation options.
 - `OTEL_DOTNET_AUTO_METRICS_ENABLED_INSTRUMENTATIONS` default value is changed to
   include all of the available instrumentations.
 - Changed Tracing sampler from `always_on` to `parentbased_always_on`.
-  See [the OpenTelemetry specification](https://github.com/open-telemetry/opentelemetry-specification/blob/6ce62202e5407518e19c56c445c13682ef51a51d/specification/sdk-environment-variables.md?plain=1#L46)
+  See [the OpenTelemetry specification](https://github.com/axal-2024/opentelemetry-specification/blob/6ce62202e5407518e19c56c445c13682ef51a51d/specification/sdk-environment-variables.md?plain=1#L46)
   for more details.
 
 ## Removed
@@ -1181,18 +1181,18 @@ This release add various new instrumentations and more propagation options.
   instead.
 - Remove `OTEL_DOTNET_AUTO_METRICS_ENABLED` configuration as it is not needed.
 
-## [0.2.0-beta.1](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.2.0-beta.1)
+## [0.2.0-beta.1](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.2.0-beta.1)
 
 The main feature of this release is the support for the metrics signal.
 
-This release is built on top of [OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet):
+This release is built on top of [OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet):
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.3.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.3.0)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.3.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.3.0)
 - `System.Diagnostics.DiagnosticSource`: [`6.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/6.0.0)
 
 You can find all OpenTelemetry references in
-[OpenTelemetry.AutoInstrumentation.csproj](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/blob/v0.2.0-beta.1/src/OpenTelemetry.AutoInstrumentation/OpenTelemetry.AutoInstrumentation.csproj).
+[OpenTelemetry.AutoInstrumentation.csproj](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/blob/v0.2.0-beta.1/src/OpenTelemetry.AutoInstrumentation/OpenTelemetry.AutoInstrumentation.csproj).
 
 ### Added
 
@@ -1239,14 +1239,14 @@ You can find all OpenTelemetry references in
   - `OTEL_DOTNET_AUTO_TRACES_DISABLED_INSTRUMENTATIONS`.
 - Remove invalid instrumentation for `MongoDB.Driver.Core` <2.3.0.
 
-## [0.1.0-beta.1](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/tag/v0.1.0-beta.1)
+## [0.1.0-beta.1](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/tag/v0.1.0-beta.1)
 
 The is an initial, official beta release,
-built on top of [OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet):
+built on top of [OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet):
 
-- [Core components](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
-  [`1.2.0`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/core-1.2.0)
-- Non-core components: [`1.0.0-rc9.2`](https://github.com/open-telemetry/opentelemetry-dotnet/releases/tag/1.0.0-rc9.2)
+- [Core components](https://github.com/axal-2024/opentelemetry-dotnet/blob/main/VERSIONING.md#core-components):
+  [`1.2.0`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/core-1.2.0)
+- Non-core components: [`1.0.0-rc9.2`](https://github.com/axal-2024/opentelemetry-dotnet/releases/tag/1.0.0-rc9.2)
 - `System.Diagnostics.DiagnosticSource`: [`6.0.0`](https://www.nuget.org/packages/System.Diagnostics.DiagnosticSource/6.0.0)
 
 ### Added

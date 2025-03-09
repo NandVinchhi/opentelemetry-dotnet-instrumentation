@@ -70,7 +70,7 @@ function Reset-IIS() {
 
 function Download-OpenTelemetry([string]$Version, [string]$Path) {
     $archive = "opentelemetry-dotnet-instrumentation-windows.zip"
-    $dlUrl = "https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/download/$Version/$archive"
+    $dlUrl = "https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/download/$Version/$archive"
     $dlPath = Join-Path $Path $archive
 
     Invoke-WebRequest -Uri $dlUrl -OutFile $dlPath -UseBasicParsing
@@ -80,7 +80,7 @@ function Download-OpenTelemetry([string]$Version, [string]$Path) {
 
 function Download-OpenTelemetry-Install-Module([string]$Version, [string]$Path) {
     $module = "OpenTelemetry.DotNet.Auto.psm1"
-    $dlUrl = "https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases/download/$Version/$module"
+    $dlUrl = "https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases/download/$Version/$module"
     $dlPath = Join-Path $Path $module
 
     Invoke-WebRequest -Uri $dlUrl -OutFile $dlPath -UseBasicParsing

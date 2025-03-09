@@ -23,7 +23,7 @@
 namespace trace
 {
 
-typedef std::shared_mutex Lock;
+typedef std::shared_mutex      Lock;
 typedef std::unique_lock<Lock> WriteLock;
 typedef std::shared_lock<Lock> ReadLock;
 
@@ -37,24 +37,24 @@ class RejitHandler;
 class RejitHandlerModuleMethod
 {
 protected:
-    mdMethodDef m_methodDef;
-    ICorProfilerFunctionControl* m_pFunctionControl;
+    mdMethodDef                   m_methodDef;
+    ICorProfilerFunctionControl*  m_pFunctionControl;
     std::unique_ptr<FunctionInfo> m_functionInfo;
 
     RejitHandlerModule* m_module;
 
 public:
     RejitHandlerModuleMethod(mdMethodDef methodDef, RejitHandlerModule* module, const FunctionInfo& functionInfo);
-    mdMethodDef GetMethodDef();
+    mdMethodDef         GetMethodDef();
     RejitHandlerModule* GetModule();
 
     ICorProfilerFunctionControl* GetFunctionControl();
-    void SetFunctionControl(ICorProfilerFunctionControl* pFunctionControl);
+    void                         SetFunctionControl(ICorProfilerFunctionControl* pFunctionControl);
 
     FunctionInfo* GetFunctionInfo();
-    void SetFunctionInfo(const FunctionInfo& functionInfo);
+    void          SetFunctionInfo(const FunctionInfo& functionInfo);
 
-    bool RequestRejitForInlinersInModule(ModuleID moduleId);
+    bool                    RequestRejitForInlinersInModule(ModuleID moduleId);
     virtual MethodRewriter* GetMethodRewriter() = 0;
 
     virtual ~RejitHandlerModuleMethod() = default;
@@ -69,17 +69,17 @@ private:
     std::unique_ptr<IntegrationDefinition> m_integrationDefinition;
 
 public:
-    TracerRejitHandlerModuleMethod(
-                    mdMethodDef methodDef,
-                    RejitHandlerModule* module,
-                    const FunctionInfo& functionInfo,
-                    const IntegrationDefinition& integrationDefinition);
-    
+    TracerRejitHandlerModuleMethod(mdMethodDef                  methodDef,
+                                   RejitHandlerModule*          module,
+                                   const FunctionInfo&          functionInfo,
+                                   const IntegrationDefinition& integrationDefinition);
+
     IntegrationDefinition* GetIntegrationDefinition();
-    MethodRewriter* GetMethodRewriter() override;
+    MethodRewriter*        GetMethodRewriter() override;
 };
 
-using RejitHandlerModuleMethodCreatorFunc = std::function<std::unique_ptr<RejitHandlerModuleMethod>(const mdMethodDef, RejitHandlerModule*)>;
+using RejitHandlerModuleMethodCreatorFunc =
+    std::function<std::unique_ptr<RejitHandlerModuleMethod>(const mdMethodDef, RejitHandlerModule*)>;
 
 /// <summary>
 /// Rejit handler representation of a module
@@ -87,9 +87,9 @@ using RejitHandlerModuleMethodCreatorFunc = std::function<std::unique_ptr<RejitH
 class RejitHandlerModule
 {
 private:
-    ModuleID m_moduleId;
-    std::unique_ptr<ModuleMetadata> m_metadata;
-    std::mutex m_methods_lock;
+    ModuleID                                                                   m_moduleId;
+    std::unique_ptr<ModuleMetadata>                                            m_metadata;
+    std::mutex                                                                 m_methods_lock;
     std::unordered_map<mdMethodDef, std::unique_ptr<RejitHandlerModuleMethod>> m_methods;
 
     std::mutex                         m_ngenProcessedInlinerModulesLock;
@@ -99,11 +99,11 @@ private:
 
 public:
     RejitHandlerModule(ModuleID moduleId, RejitHandler* handler);
-    ModuleID GetModuleId();
+    ModuleID      GetModuleId();
     RejitHandler* GetHandler();
 
     ModuleMetadata* GetModuleMetadata();
-    void SetModuleMetadata(ModuleMetadata* metadata);
+    void            SetModuleMetadata(ModuleMetadata* metadata);
 
     bool CreateMethodIfNotExists(const mdMethodDef methodDef, RejitHandlerModuleMethodCreatorFunc creator);
     bool ContainsMethod(mdMethodDef methodDef);
@@ -120,18 +120,18 @@ class RejitHandler
 {
 private:
     std::atomic_bool m_shutdown = {false};
-    Lock m_shutdown_lock;
+    Lock             m_shutdown_lock;
 
-    std::mutex m_modules_lock;
+    std::mutex                                                        m_modules_lock;
     std::unordered_map<ModuleID, std::unique_ptr<RejitHandlerModule>> m_modules;
-    AssemblyProperty* m_pCorAssemblyProperty = nullptr;
+    AssemblyProperty*                                                 m_pCorAssemblyProperty = nullptr;
 
-    ICorProfilerInfo7* m_profilerInfo;
+    ICorProfilerInfo7*  m_profilerInfo;
     ICorProfilerInfo12* m_profilerInfo12;
 
     std::shared_ptr<RejitWorkOffloader> m_work_offloader;
-        
-    std::mutex m_ngenInlinersModules_lock;
+
+    std::mutex            m_ngenInlinersModules_lock;
     std::vector<ModuleID> m_ngenInlinersModules;
 
 public:
@@ -151,13 +151,14 @@ public:
     void Shutdown();
     bool IsShutdownRequested();
 
-    HRESULT NotifyReJITParameters(ModuleID moduleId, mdMethodDef methodId,
+    HRESULT NotifyReJITParameters(ModuleID                     moduleId,
+                                  mdMethodDef                  methodId,
                                   ICorProfilerFunctionControl* pFunctionControl);
     HRESULT NotifyReJITCompilationStarted(FunctionID functionId, ReJITID rejitId);
 
     ICorProfilerInfo7* GetCorProfilerInfo();
 
-    void SetCorAssemblyProfiler(AssemblyProperty* pCorAssemblyProfiler);
+    void              SetCorAssemblyProfiler(AssemblyProperty* pCorAssemblyProfiler);
     AssemblyProperty* GetCorAssemblyProperty();
 };
 

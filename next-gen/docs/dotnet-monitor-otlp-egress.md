@@ -32,7 +32,7 @@ There are three different repos in play in the design:
   perform diagnostics as well as the event pipe logic to read from
   `EventSource`s.
 
-* https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation
+* https://github.com/axal-2024/opentelemetry-dotnet-instrumentation
 
   Is going to contain the mini-OpenTelemetry SDK dotnet-monitor will use to do
   the heavy lifting. This is being called a mini-SDK because it only needs to

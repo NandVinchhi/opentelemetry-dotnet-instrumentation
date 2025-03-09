@@ -18,7 +18,7 @@ Beta (experimental) releases are having the `-beta.N` pre-release label.
 ## Compatibility with OpenTelemetry .NET and other dependencies
 
 OpenTelemetry .NET Automatic Instrumentation is built on top of
-[OpenTelemetry .NET](https://github.com/open-telemetry/opentelemetry-dotnet).
+[OpenTelemetry .NET](https://github.com/axal-2024/opentelemetry-dotnet).
 Unfortunately, this may cause dependency version conflicts
 if the instrumented application is referencing the same assemblies
 as OpenTelemetry .NET Automatic Instrumentation.
@@ -33,7 +33,7 @@ would be an overkill.
 
 ## Semantic Conventions stability
 
-See [here](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/versioning-and-stability.md#semantic-conventions-stability).
+See [here](https://github.com/axal-2024/opentelemetry-specification/blob/main/specification/versioning-and-stability.md#semantic-conventions-stability).
 
 ## Major version bump
 

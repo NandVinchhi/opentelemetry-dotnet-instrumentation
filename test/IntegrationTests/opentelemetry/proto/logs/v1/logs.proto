@@ -132,7 +132,7 @@ enum LogRecordFlags {
 }
 
 // A log record according to OpenTelemetry Log Data Model:
-// https://github.com/open-telemetry/oteps/blob/main/text/logs/0097-log-data-model.md
+// https://github.com/axal-2024/oteps/blob/main/text/logs/0097-log-data-model.md
 message LogRecord {
   reserved 4;
 

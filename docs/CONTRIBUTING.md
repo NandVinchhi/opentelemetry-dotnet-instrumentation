@@ -4,10 +4,10 @@
 
 We'd love your help!
 
-[The project board](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/projects/1)
+[The project board](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/projects/1)
 shows the current work in progress.
 
-Please join our weekly [SIG meeting](https://github.com/open-telemetry/community#special-interest-groups).
+Please join our weekly [SIG meeting](https://github.com/axal-2024/community#special-interest-groups).
 Meeting notes are available as a public [Google
 doc](https://docs.google.com/document/d/1dYdwRQVE3zu0vlp_lqGctNm0dCQUkDo2LfScUJzpuT8/edit?usp=sharing).
 
@@ -18,7 +18,7 @@ If you are new, you can create a CNCF Slack account [here](http://slack.cncf.io/
 
 We are always looking for your feedback.
 
-You can do this by [submitting a GitHub issue](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/new).
+You can do this by [submitting a GitHub issue](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/new).
 
 You may also prefer writing on [Slack](https://cloud-native.slack.com/archives/C01NR1YLSE7).
 
@@ -39,14 +39,14 @@ project, then create an issue and describe your proposal.
 
 ## How to contribute
 
-Please read the [OpenTelemetry New Contributor Guide](https://github.com/open-telemetry/community/tree/main/guides/contributor)
-and the [code of conduct](https://github.com/open-telemetry/community/blob/main/code-of-conduct.md).
+Please read the [OpenTelemetry New Contributor Guide](https://github.com/axal-2024/community/tree/main/guides/contributor)
+and the [code of conduct](https://github.com/axal-2024/community/blob/main/code-of-conduct.md).
 for general practices of the OpenTelemetry project.
 
 Select a good issue from the links below (ordered by difficulty/complexity):
 
-* [Good First Issue](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-* [Help Wanted](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+* [Good First Issue](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+* [Help Wanted](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 
 Comment on the issue that you want to work on so we can assign it to you and
 clarify anything related to it.

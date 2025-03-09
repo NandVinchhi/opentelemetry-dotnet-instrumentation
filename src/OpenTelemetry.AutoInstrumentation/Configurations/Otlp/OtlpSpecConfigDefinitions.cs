@@ -7,7 +7,7 @@ namespace OpenTelemetry.AutoInstrumentation.Configurations.Otlp;
 /// Contains spec environment variable key definitions for OpenTelemetry Protocol (OTLP) exporter.
 /// </summary>
 /// <remarks>
-/// Specification: <see href="https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/protocol/exporter.md"/>.
+/// Specification: <see href="https://github.com/axal-2024/opentelemetry-specification/blob/main/specification/protocol/exporter.md"/>.
 /// </remarks>
 internal static class OtlpSpecConfigDefinitions
 {

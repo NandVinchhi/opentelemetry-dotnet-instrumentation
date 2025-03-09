@@ -30,7 +30,7 @@ public class StrongNamedTests : TestHelper
 
         // TODO: When native logs are moved to an EventSource implementation check for the log
         // TODO: entries reporting the missing instrumentation type and missing instrumentation methods.
-        // TODO: See https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/issues/960
+        // TODO: See https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/issues/960
 
         collector.AssertExpectations();
     }

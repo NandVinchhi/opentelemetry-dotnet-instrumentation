@@ -50,7 +50,7 @@ Errors occurring at application runtime are logged and should never crash the ap
 
 To instrument a .NET application without source code changes, do the following:
 
- 1. Inject the [OpenTelemetry .NET SDK](https://github.com/open-telemetry/opentelemetry-dotnet#readme)
+ 1. Inject the [OpenTelemetry .NET SDK](https://github.com/axal-2024/opentelemetry-dotnet#readme)
  into the application.
  2. Add and enable instrumentations as the targeted libraries are loaded
  into the application.
@@ -59,7 +59,7 @@ To instrument a .NET application without source code changes, do the following:
 
 #### **.NET** applications
 
-The [OpenTelemetry .NET SDK](https://github.com/open-telemetry/opentelemetry-dotnet#readme)
+The [OpenTelemetry .NET SDK](https://github.com/axal-2024/opentelemetry-dotnet#readme)
 is injected using the [host startup hook](https://github.com/dotnet/runtime/blob/main/docs/design/features/host-startup-hook.md).
 This allows the OpenTelemetry .NET SDK to be configured before any application code
 runs. Although the OpenTelemetry .NET SDK is injected into a .NET application
@@ -82,9 +82,9 @@ or callbacks provided directly by the library or framework being instrumented.
 This type of instrumentation depends on the OpenTelemetry API and the specific
 library or framework that they instrument. Some examples include:
 
-  - [ASP.NET Core Instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/tree/main/src/OpenTelemetry.Instrumentation.AspNetCore)
-  - [gRPC Client Instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/tree/main/src/OpenTelemetry.Instrumentation.GrpcNetClient)
-  - [HttpClient and HttpWebRequest Instrumentation](https://github.com/open-telemetry/opentelemetry-dotnet-contrib/tree/main/src/OpenTelemetry.Instrumentation.Http)
+  - [ASP.NET Core Instrumentation](https://github.com/axal-2024/opentelemetry-dotnet-contrib/tree/main/src/OpenTelemetry.Instrumentation.AspNetCore)
+  - [gRPC Client Instrumentation](https://github.com/axal-2024/opentelemetry-dotnet-contrib/tree/main/src/OpenTelemetry.Instrumentation.GrpcNetClient)
+  - [HttpClient and HttpWebRequest Instrumentation](https://github.com/axal-2024/opentelemetry-dotnet-contrib/tree/main/src/OpenTelemetry.Instrumentation.Http)
 
 - **Bytecode instrumentations**: instrumentations created for libraries
 or frameworks that lack proper hooks or callbacks to allow the collection
@@ -270,7 +270,7 @@ differs depending on the .NET version:
 OpenTelemetry:
 
 - [OpenTelemetry website](https://opentelemetry.io/)
-- [OpenTelemetry Specification](https://github.com/open-telemetry/opentelemetry-specification)
+- [OpenTelemetry Specification](https://github.com/axal-2024/opentelemetry-specification)
 
 Microsoft .NET Profiling APIs:
 

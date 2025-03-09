@@ -141,7 +141,7 @@ All MarkdownLint tasks require [Node.js](https://nodejs.org/) installed locally.
 ### Managed code formatting
 
 The .NET code formatting is based on the
-[OpenTelemetry .NET repository](https://github.com/open-telemetry/opentelemetry-dotnet).
+[OpenTelemetry .NET repository](https://github.com/axal-2024/opentelemetry-dotnet).
 
 Installing formatter:
 

@@ -51,7 +51,7 @@ test -z "$VERSION" && VERSION="v{{VERSION}}"
 
 DOWNLOAD_DIR="${DOWNLOAD_DIR:=${TMPDIR:=$(mktemp -d)}}"
 
-RELEASES_URL="https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/releases"
+RELEASES_URL="https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/releases"
 ARCHIVE="opentelemetry-dotnet-instrumentation-$OS_TYPE.zip"
 
 # In case of Linux, use architecture in the download path

@@ -42,7 +42,7 @@
 
    After you've publish the release, a `release-publish` GitHub workflow starts.
 
-1. Check the status of [the `release-publish` GitHub workflow](https://github.com/open-telemetry/opentelemetry-dotnet-instrumentation/actions/workflows/release-publish.yml).
+1. Check the status of [the `release-publish` GitHub workflow](https://github.com/axal-2024/opentelemetry-dotnet-instrumentation/actions/workflows/release-publish.yml).
 
 1. If the `release-publish` GitHub workflow succeeds, publish the NuGet packages:
     1. Unzip `opentelemetry-dotnet-instrumentation-nuget-packages.zip` to a local
@@ -53,7 +53,7 @@
 1. For a stable release, update the version in:
 
    - [`examples/demo/Dockerfile`](../examples/demo/Dockerfile)
-   - [OpenTelemetry Operator](https://github.com/open-telemetry/opentelemetry-operator/blob/main/autoinstrumentation/dotnet/version.txt)
-   - [OpenTelemetry Demo](https://github.com/open-telemetry/opentelemetry-demo/blob/main/src/accounting/Accounting.csproj#L20)
+   - [OpenTelemetry Operator](https://github.com/axal-2024/opentelemetry-operator/blob/main/autoinstrumentation/dotnet/version.txt)
+   - [OpenTelemetry Demo](https://github.com/axal-2024/opentelemetry-demo/blob/main/src/accounting/Accounting.csproj#L20)
 
-1. For a stable release, update documentation under [opentelemetry.io](https://github.com/open-telemetry/opentelemetry.io/tree/main/content/en/docs/zero-code/net).
+1. For a stable release, update documentation under [opentelemetry.io](https://github.com/axal-2024/opentelemetry.io/tree/main/content/en/docs/zero-code/net).

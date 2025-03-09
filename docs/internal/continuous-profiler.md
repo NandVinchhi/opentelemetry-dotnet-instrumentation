@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]  
 > Continuous profiler is an experimental feature. It will be subject to change,
-> when <https://github.com/open-telemetry/oteps/pull/239> or <https://github.com/open-telemetry/oteps/pull/237>
+> when <https://github.com/axal-2024/oteps/pull/239> or <https://github.com/axal-2024/oteps/pull/237>
 > are merged.
 
 The continuous profiler collects stack traces from the processes for two type of
@@ -212,8 +212,8 @@ For now, the plugins is responsible for
 ### Plugin contract
 
 > [!IMPORTANT]  
-> It will be subject to change, when <https://github.com/open-telemetry/oteps/pull/239>
-> or <https://github.com/open-telemetry/oteps/pull/237> will be ready and merged.
+> It will be subject to change, when <https://github.com/axal-2024/oteps/pull/239>
+> or <https://github.com/axal-2024/oteps/pull/237> will be ready and merged.
 
 As other methods, `GetContinuousProfilerConfiguration` is called by reflection
 and convention.
