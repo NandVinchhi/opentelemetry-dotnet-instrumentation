@@ -326,8 +326,8 @@ ULONG RejitPreprocessor<RejitRequestDefinition>::RequestRejitForLoadedModules(
             {
                 // If the integration is not for the current assembly we skip.
                 if (target_method.type.assembly.name.size() > 0 && target_method.type.assembly.name[0] == L'?'){
-                    std::wstring assemblyPrefix = target_method.type.assembly.name.substr(1);
-                    std::wstring currentAssembly = moduleInfo.assembly.name;
+                    std::wstring assemblyPrefix(target_method.type.assembly.name.begin() + 1, target_method.type.assembly.name.end());
+                    std::wstring currentAssembly(moduleInfo.assembly.name.begin(), moduleInfo.assembly.name.end());
                     if (currentAssembly.rfind(assemblyPrefix, 0) != 0) {
                         continue;
                     }
@@ -372,7 +372,7 @@ ULONG RejitPreprocessor<RejitRequestDefinition>::RequestRejitForLoadedModules(
                     // Process all types in the module when wildcard is specified
                     Logger::Debug("  Processing all types in module: ", moduleInfo.assembly.name);                    
                     // Extract the prefix from the wildcard pattern (everything after the '?')
-                    std::wstring typePrefix = target_method.type.name.substr(1);
+                    std::wstring typePrefix(target_method.type.name.begin() + 1, target_method.type.name.end());
                     
                     // Enumerate all type definitions in the module
                     auto enumTypeDefs = EnumTypeDefs(metadataImport);
