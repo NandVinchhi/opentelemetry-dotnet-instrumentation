@@ -38,19 +38,22 @@ void RejitPreprocessor<RejitRequestDefinition>::ProcessTypeDefForRejit(const Rej
     Logger::Debug("  Looking for '", target_method.type.name, ".", target_method.method_name, "(",
                   (target_method.signature_types.size() - 1), " params)' method implementation.");
 
-    bool is_wildcard = target_method.method_name.size() > 0 && target_method.method_name[0] == L'?';
+    bool                    is_wildcard = target_method.method_name.size() > 0 && target_method.method_name[0] == L'?';
     Enumerator<mdMethodDef> enumMethods(
-        [&metadataImport, &typeDef, &target_method, is_wildcard](HCORENUM* ptr, mdMethodDef arr[], ULONG max, ULONG* cnt) -> HRESULT {
-            if (is_wildcard) {
+        [&metadataImport, &typeDef, &target_method, is_wildcard](HCORENUM* ptr, mdMethodDef arr[], ULONG max,
+                                                                 ULONG* cnt) -> HRESULT
+        {
+            if (is_wildcard)
+            {
                 return metadataImport->EnumMethods(ptr, typeDef, arr, max, cnt);
-            } else {
-                return metadataImport->EnumMethodsWithName(ptr, typeDef, target_method.method_name.c_str(), arr, max, cnt);
+            }
+            else
+            {
+                return metadataImport->EnumMethodsWithName(ptr, typeDef, target_method.method_name.c_str(), arr, max,
+                                                           cnt);
             }
         },
-        [&metadataImport](HCORENUM ptr) -> void { 
-            metadataImport->CloseEnum(ptr); 
-        }
-    );
+        [&metadataImport](HCORENUM ptr) -> void { metadataImport->CloseEnum(ptr); });
 
     auto corProfilerInfo      = m_rejit_handler->GetCorProfilerInfo();
     auto pCorAssemblyProperty = m_rejit_handler->GetCorAssemblyProperty();
@@ -80,13 +83,14 @@ void RejitPreprocessor<RejitRequestDefinition>::ProcessTypeDefForRejit(const Rej
 
         const auto numOfArgs = functionInfo.method_signature.NumberOfArguments();
 
-        if (!is_wildcard) {
+        if (!is_wildcard)
+        {
             // Compare if the current mdMethodDef contains the same number of arguments as the
             // instrumentation target
             if (numOfArgs != target_method.signature_types.size() - 1)
             {
                 Logger::Debug("    * The caller for the methoddef: ", caller.name,
-                            " doesn't have the right number of arguments (", numOfArgs, " arguments).");
+                              " doesn't have the right number of arguments (", numOfArgs, " arguments).");
                 continue;
             }
 
@@ -109,7 +113,7 @@ void RejitPreprocessor<RejitRequestDefinition>::ProcessTypeDefForRejit(const Rej
             if (argumentsMismatch)
             {
                 Logger::Debug("    * The caller for the methoddef: ", target_method.method_name,
-                            " doesn't have the right type of arguments.");
+                              " doesn't have the right type of arguments.");
                 continue;
             }
         }
@@ -325,13 +329,18 @@ ULONG RejitPreprocessor<RejitRequestDefinition>::RequestRejitForLoadedModules(
             else
             {
                 // If the integration is not for the current assembly we skip.
-                if (target_method.type.assembly.name.size() > 0 && target_method.type.assembly.name[0] == L'?'){
-                    std::wstring assemblyPrefix(target_method.type.assembly.name.begin() + 1, target_method.type.assembly.name.end());
+                if (target_method.type.assembly.name.size() > 0 && target_method.type.assembly.name[0] == L'?')
+                {
+                    std::wstring assemblyPrefix(target_method.type.assembly.name.begin() + 1,
+                                                target_method.type.assembly.name.end());
                     std::wstring currentAssembly(moduleInfo.assembly.name.begin(), moduleInfo.assembly.name.end());
-                    if (currentAssembly.rfind(assemblyPrefix, 0) != 0) {
+                    if (currentAssembly.rfind(assemblyPrefix, 0) != 0)
+                    {
                         continue;
                     }
-                } else if (target_method.type.assembly.name != moduleInfo.assembly.name) {
+                }
+                else if (target_method.type.assembly.name != moduleInfo.assembly.name)
+                {
                     continue;
                 }
 
@@ -368,46 +377,52 @@ ULONG RejitPreprocessor<RejitRequestDefinition>::RequestRejitForLoadedModules(
                     continue;
                 }
 
-                if (target_method.type.name.size() > 0 && target_method.type.name[0] == L'?') {
+                if (target_method.type.name.size() > 0 && target_method.type.name[0] == L'?')
+                {
                     // Process all types in the module when wildcard is specified
-                    Logger::Debug("  Processing all types in module: ", moduleInfo.assembly.name);                    
+                    Logger::Debug("  Processing all types in module: ", moduleInfo.assembly.name);
                     // Extract the prefix from the wildcard pattern (everything after the '?')
                     std::wstring typePrefix(target_method.type.name.begin() + 1, target_method.type.name.end());
-                    
+
                     // Enumerate all type definitions in the module
                     auto enumTypeDefs = EnumTypeDefs(metadataImport);
-                    
+
                     std::vector<mdTypeDef> typeDefsToProcess;
-                    
+
                     // Collect all type definitions
                     for (auto typeDefIter = enumTypeDefs.begin(); typeDefIter != enumTypeDefs.end(); ++typeDefIter)
                     {
                         mdTypeDef typeDef = *typeDefIter;
                         typeDefsToProcess.push_back(typeDef);
                     }
-                    
+
                     // Process each type definition for rejit
                     for (const auto& typeDef : typeDefsToProcess)
                     {
                         // Get the type name for logging
-                        WCHAR szTypeDef[256];
-                        ULONG cchTypeDef;
-                        DWORD typeDefFlags;
+                        WCHAR   szTypeDef[256];
+                        ULONG   cchTypeDef;
+                        DWORD   typeDefFlags;
                         mdToken tkExtends;
-                        HRESULT hr = metadataImport->GetTypeDefProps(typeDef, szTypeDef, 256, &cchTypeDef, &typeDefFlags, &tkExtends);
-                        if (SUCCEEDED(hr)) {
+                        HRESULT hr = metadataImport->GetTypeDefProps(typeDef, szTypeDef, 256, &cchTypeDef,
+                                                                     &typeDefFlags, &tkExtends);
+                        if (SUCCEEDED(hr))
+                        {
                             std::wstring typeName(szTypeDef, szTypeDef + cchTypeDef - 1);
+                            std::wcout << "MATCHED TYPE" << typeName << std::endl;
 
-                            if (typeName.rfind(typePrefix, 0) == 0) {
-                                ProcessTypeDefForRejit(definition, metadataImport, metadataEmit, assemblyImport, assemblyEmit,
-                                              moduleInfo, typeDef, vtModules, vtMethodDefs);
+                            if (typeName.rfind(typePrefix, 0) == 0)
+                            {
+                                ProcessTypeDefForRejit(definition, metadataImport, metadataEmit, assemblyImport,
+                                                       assemblyEmit, moduleInfo, typeDef, vtModules, vtMethodDefs);
                             }
                         }
-                        
-                       
                     }
-                } else {
-                    // We are in the right module, so we try to load the mdTypeDef from the integration target type name.
+                }
+                else
+                {
+                    // We are in the right module, so we try to load the mdTypeDef from the integration target type
+                    // name.
                     mdTypeDef typeDef = mdTypeDefNil;
                     auto      foundType =
                         FindTypeDefByName(target_method.type.name, moduleInfo.assembly.name, metadataImport, typeDef);
@@ -420,7 +435,7 @@ ULONG RejitPreprocessor<RejitRequestDefinition>::RequestRejitForLoadedModules(
                     // Looking for the method to rewrite
                     //
                     ProcessTypeDefForRejit(definition, metadataImport, metadataEmit, assemblyImport, assemblyEmit,
-                                        moduleInfo, typeDef, vtModules, vtMethodDefs);
+                                           moduleInfo, typeDef, vtModules, vtMethodDefs);
                 }
             }
         }
