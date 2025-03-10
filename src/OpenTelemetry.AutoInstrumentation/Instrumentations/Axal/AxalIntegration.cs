@@ -13,8 +13,8 @@ namespace OpenTelemetry.AutoInstrumentation.Instrumentations.Axal;
 /// Axal custom instrumentation for all methods in the source code
 /// </summary>
 [InstrumentMethod(
-    assemblyName: "?INTIME",
-    typeName: "?INTIME.Web",
+    assemblyName: "?vizdom",
+    typeName: "?vizdom",
     methodName: "?",
     returnTypeName: ClrNames.Void,
     parameterTypeNames: new string[] { },
