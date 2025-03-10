@@ -14,7 +14,7 @@ namespace OpenTelemetry.AutoInstrumentation.Instrumentations.Axal;
 /// </summary>
 [InstrumentMethod(
     assemblyName: "?INTIME",
-    typeName: "?INTIME.Web.Startup.Program",
+    typeName: "?INTIME.Web.Startup",
     methodName: "?",
     returnTypeName: ClrNames.Void,
     parameterTypeNames: new string[] { },
