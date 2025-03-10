@@ -25,7 +25,7 @@ internal static partial class InstrumentationDefinitions
             // Axal
             if (tracerSettings.EnabledInstrumentations.Contains(TracerInstrumentation.Axal))
             {
-                nativeCallTargetDefinitions.Add(new("?vizdom", "?vizdom", "?", ["System.Void"], 1, 0, 0, 65535, 65535, 65535, AssemblyFullName, "OpenTelemetry.AutoInstrumentation.Instrumentations.Axal.AxalIntegration"));
+                nativeCallTargetDefinitions.Add(new("?vizdom", "?vizdom.services", "?", ["System.Void"], 1, 0, 0, 65535, 65535, 65535, AssemblyFullName, "OpenTelemetry.AutoInstrumentation.Instrumentations.Axal.AxalIntegration"));
             }
 
             // Kafka

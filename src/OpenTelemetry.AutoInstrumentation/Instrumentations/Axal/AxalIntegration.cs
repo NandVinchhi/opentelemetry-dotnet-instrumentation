@@ -14,7 +14,7 @@ namespace OpenTelemetry.AutoInstrumentation.Instrumentations.Axal;
 /// </summary>
 [InstrumentMethod(
     assemblyName: "?vizdom",
-    typeName: "?vizdom",
+    typeName: "?vizdom.services",
     methodName: "?",
     returnTypeName: ClrNames.Void,
     parameterTypeNames: new string[] { },
