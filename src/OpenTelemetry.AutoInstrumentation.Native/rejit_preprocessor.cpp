@@ -334,13 +334,10 @@ ULONG RejitPreprocessor<RejitRequestDefinition>::RequestRejitForLoadedModules(
                     std::wstring assemblyPrefix(target_method.type.assembly.name.begin() + 1,
                                                 target_method.type.assembly.name.end());
                     std::wstring currentAssembly(moduleInfo.assembly.name.begin(), moduleInfo.assembly.name.end());
-                    std::wcout << "CURRENT ASSEMBLY " << currentAssembly << std::endl;
                     if (currentAssembly.rfind(assemblyPrefix, 0) != 0)
                     {
-                        std::wcout << "NOT A MATCH" << std::endl;
                         continue;
                     }
-                    std::wcout << "MATCHED ASSEMBLY WITH " << assemblyPrefix << " - " << currentAssembly << std::endl;
                 }
                 else if (target_method.type.assembly.name != moduleInfo.assembly.name)
                 {
@@ -412,10 +409,10 @@ ULONG RejitPreprocessor<RejitRequestDefinition>::RequestRejitForLoadedModules(
                         if (SUCCEEDED(hr))
                         {
                             std::wstring typeName(szTypeDef, szTypeDef + cchTypeDef - 1);
-                            std::wcout << "MATCHED TYPE" << typeName << std::endl;
 
                             if (typeName.rfind(typePrefix, 0) == 0)
                             {
+                                std::wcout << "MATCHED TYPE " << typeName << std::endl;
                                 ProcessTypeDefForRejit(definition, metadataImport, metadataEmit, assemblyImport,
                                                        assemblyEmit, moduleInfo, typeDef, vtModules, vtMethodDefs);
                             }

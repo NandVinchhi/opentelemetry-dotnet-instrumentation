@@ -31,7 +31,7 @@ internal static partial class InstrumentationDefinitions
             // Axal
             if (tracerSettings.EnabledInstrumentations.Contains(TracerInstrumentation.Axal))
             {
-                nativeCallTargetDefinitions.Add(new("?INTIME", "?INTIME", "?", ["System.Void"], 1, 0, 0, 65535, 65535, 65535, AssemblyFullName, "OpenTelemetry.AutoInstrumentation.Instrumentations.Axal.AxalIntegration"));
+                nativeCallTargetDefinitions.Add(new("?INTIME", "?INTIME.Web.Startup.Program", "?", ["System.Void"], 1, 0, 0, 65535, 65535, 65535, AssemblyFullName, "OpenTelemetry.AutoInstrumentation.Instrumentations.Axal.AxalIntegration"));
             }
 
             // Kafka
